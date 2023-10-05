@@ -329,8 +329,9 @@ html {
 
 .travel-block {
     width: 100%;
-    margin: 0 auto;
+    margin: 50px auto;
     position: relative;
+
 
 }
 
@@ -1401,7 +1402,7 @@ margin-bottom: 79px;
 /* Стилі для дуже малих екранів (дисплей максимум 575рх) */
 @media (max-width: 575px) {
     .info-block__left {
-        padding: 0 20px;
+        padding: 50px 20px;
     }
 
     .info-block__left-title2 {
@@ -1436,6 +1437,7 @@ margin-bottom: 79px;
     .end{
         flex-wrap: wrap;
     }
+
 
 
 }
