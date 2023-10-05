@@ -1437,6 +1437,9 @@ margin-bottom: 79px;
     .end{
         flex-wrap: wrap;
     }
+    .header{
+        margin-bottom: 20px;
+    }
 
 
 
