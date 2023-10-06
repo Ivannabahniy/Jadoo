@@ -251,17 +251,22 @@ html {
     position: absolute;
     transition: 0.6s;
     transform: translateX(-2000px) translateY(-550px);
-    box-shadow: 1px 1px 5px #a6a6a6;
     z-index: 4;
     border-radius: 20px;
     padding: 20px;
     opacity: 0;
+    box-shadow: 0px 1.85185px 3.14815px 0px rgba(0, 0, 0, 0.00), 0px 8.14815px 6.51852px 0px rgba(0, 0, 0, 0.01), 0px 20px 13px 0px rgba(0, 0, 0, 0.01), 0px 38.51852px 25.48148px 0px rgba(0, 0, 0, 0.01), 0px 64.81481px 46.85185px 0px rgba(0, 0, 0, 0.02), 0px 100px 80px 0px rgba(0, 0, 0, 0.02);
+    box-shadow: inset 2px 2px 10px #b8b8b8a4;
 }
 
 .info-block__input[type="checkbox"]:checked ~ .info-block__more{
     background-color: #ffffff;
     transform: translateX(-20px)translateY(-550px);
     opacity: 1;
+}
+
+.info-block__input[type="checkbox"]:checked ~ .info-block__input{
+    
 }
 
 
@@ -327,6 +332,7 @@ html {
     justify-content: space-around;
     flex-wrap: wrap;
     gap: 17px;
+    
 
 }
 
@@ -340,11 +346,13 @@ html {
     font-size: 50px;
     font-style: normal;
     font-weight: 700;
+    text-shadow: 1px 1px 5px #000;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.15), inset 2px 2px 10px #191919a4 ;
     cursor: pointer;
+
 }
 
 .info-block__more__img1:nth-child(1){
@@ -387,8 +395,7 @@ html {
     text-align: center;
     display: flex;
     box-shadow: inset 1px 1px 7px #ffc4c4;
-    opacity: 0.8;
-
+    text-shadow: 1px 1px 2px #9f3d3d;
 }
 
 .info-block__more__img6:hover .info-block__more-mouse {
@@ -1065,8 +1072,8 @@ html {
     font-weight: 400;
     line-height: normal;
     width: 421px;
-    height: 68px;
-
+    height: 58px;
+    padding: 10px;
     border-radius: 10px;
     background-color: #ffffff;
     margin-right: 24px;
@@ -1112,6 +1119,7 @@ html {
     display: flex;
     justify-content: center;
     margin-top: 74px;
+
 }
 
 .subscribe1 {}
@@ -1367,10 +1375,7 @@ margin-bottom: 79px;
         width: 90%;
     }
 
-    .trip__right-card {
-        width: 600px;
 
-    }
 
 }
 
@@ -1590,5 +1595,15 @@ margin-bottom: 79px;
         width: 100px;
         height: 100px;
         font-size: 10px;
+    }
+    .trip__right-card{
+        width: 250px;
+    }
+    .trip__right-card_i{
+        width: 200px;
+        height: 113px;
+    }
+    .subscribe__email{
+        width: 240px;
     }
 }
