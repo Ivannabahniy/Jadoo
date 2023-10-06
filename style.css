@@ -185,6 +185,7 @@ html {
     margin: 0 auto;
     display: flex;
     max-width: 1200.874px;
+
 }
 
 .info-block__left {
@@ -227,7 +228,7 @@ html {
     font-weight: 500;
     line-height: 30px;
     /* 187.5% */
-    margin-bottom: 34px;
+    margin-bottom: 34px
 }
 
 .info-block__left-section {
@@ -245,17 +246,22 @@ html {
 }
 
 .info-block__more{
-    width: 500px;
+    width: 700px;
     height: 500px;
-    border: 1px solid #000;
     position: absolute;
     transition: 0.6s;
-    transform: translateX(-700px);
+    transform: translateX(-2000px) translateY(-550px);
+    box-shadow: 1px 1px 5px #a6a6a6;
+    z-index: 4;
+    border-radius: 20px;
+    padding: 20px;
+    opacity: 0;
 }
 
 .info-block__input[type="checkbox"]:checked ~ .info-block__more{
-    background-color: #8A79DF;
-    transform: translateX(0px);
+    background-color: #ffffff;
+    transform: translateX(-20px)translateY(-550px);
+    opacity: 1;
 }
 
 
@@ -277,7 +283,116 @@ html {
     /* 1 назва 2 час переходу 3 як рухається 4 безкінченність 5 бумеранг*/
     position: relative;
     z-index: 1;
+    cursor: pointer;
 
+}
+
+.info-block__more-title{
+    color: var(--TEXT-CLR, #5E6282);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    animation: titleee 5s linear infinite alternate;
+    margin-bottom: 20px;
+}
+
+@keyframes titleee{
+    0%{
+        
+        color: #000;
+    }
+    25%{
+        color: #45bf33;
+
+    }
+    50%{
+        color: #5E6282;
+    }
+    75%{
+        color: #4b96ff;
+    }
+    100%{
+        
+        color: #bb3333;
+
+    }
+
+}
+
+.info-block__more__img{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 17px;
+
+}
+
+.info-block__more__img1{
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    font-family: Volkhov;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+
+.info-block__more__img1:nth-child(1){
+        background-image: url(./imag/rio.jpg);
+}
+
+
+.info-block__more__img1:nth-child(2){
+    background-image: url(./imag/dO88qGUR3nNNlJAouwVfzDKPdrsX2eglI3sIsQ8y.jpg);
+    
+}
+
+.info-block__more__img1:nth-child(3){
+    background-image: url(./imag/china.jpg);
+}
+
+.info-block__more__img1:nth-child(4){
+    background-image: url(./imag/New_York_1_1.jpg);
+}
+
+.info-block__more__img1:nth-child(5){
+    background-image: url(./imag/france.jpg);
+}
+
+.info-block__more__img1:nth-child(6){
+    background-image: url(./imag/Krakow_1.jpg);
+}
+
+.info-block__more-mouse{
+    width: 200px;
+    height: 200px;
+    background-color: #ffffff;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    color: #000;
+    border-radius: 20px;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    box-shadow: inset 1px 1px 7px #ffc4c4;
+    opacity: 0.8;
+
+}
+
+.info-block__more__img6:hover .info-block__more-mouse {
+    background-color: #ff6666;
 }
 
 
@@ -400,7 +515,6 @@ html {
 .travel-block__card1-img {
     width: 92px;
     height: 78px;
-    flex-shrink: 0;
 }
 
 
@@ -420,7 +534,6 @@ html {
 .travel-block__card2-img {
     width: 166.874px;
     height: 153.332px;
-    flex-shrink: 0;
 }
 
 
@@ -1382,6 +1495,12 @@ margin-bottom: 79px;
         transform: rotate(-90deg);
         top: 0;
     }
+    .info-block__more{
+        max-width: 500px;
+        height: 700px;
+    }
+
+
 }
 
 
@@ -1396,6 +1515,21 @@ margin-bottom: 79px;
     }
     .header__input[type="checkbox"]:checked ~ .header__menu{
         width: 60%;
+    }
+    .info-block__more{
+        max-width: 500px;
+        max-height: 400px;
+    }
+
+    .info-block__more__img1{
+        width: 150px;
+        height: 150px;
+        font-size: 40px;
+    }
+    .info-block__more-mouse{
+        width: 150px;
+        height: 150px;
+        font-size: 20px;
     }
 }
 
@@ -1441,6 +1575,20 @@ margin-bottom: 79px;
         margin-bottom: 20px;
     }
 
+    .info-block__more{
+        max-width: 270px;
+        max-height: 450px;
+        margin: 100px auto;
+    }
 
-
+    .info-block__more__img1{
+        width: 100px;
+        height: 100px;
+        font-size: 30px;
+    }
+    .info-block__more-mouse{
+        width: 100px;
+        height: 100px;
+        font-size: 10px;
+    }
 }
